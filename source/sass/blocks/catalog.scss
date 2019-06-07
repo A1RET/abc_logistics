@@ -1,0 +1,15 @@
+.catalog {
+  margin-top: 70px;
+}
+
+.catalog-list {
+  @include list;
+}
+
+.catalog-title {
+  @include font(18px, 20px, 600);
+}
+
+.catalog-text {
+  line-height: 24px;
+}
