@@ -15,10 +15,10 @@
     </div>
     <div class="wrapper">
       <header class="header">
+        <h1 class="visually-hidden">Логистическая компания ABC Logistics</h1>
         <div class="container">
           <div class="header-top">
             <picture>
-              <h1 class="visually-hidden">Логистическая компания ABC Logistics</h1>
               <source type="image/webp" srcset="img/content/logo-m.webp">
 
               <img class="header-logo" src="img/content/logo-m.png" width="128" height="32" alt="Логотип ABC Logistics">
@@ -46,7 +46,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/content/slide1-m.webp">
 
-                  <img class="slider-image" src="img/content/slide1-m.jpg" width="280" height="300">
+                  <img class="slider-image" src="img/content/slide1-m.jpg" width="280" height="300" alt="Изображение грузовика">
                 </picture>
                 <a class="slider-link" href="">Контейнерные грузоперевозки</a>
               </li>
@@ -54,7 +54,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/content/slide2-m.webp">
 
-                  <img class="slider-image" src="img/content/slide2-m.jpg" width="280" height="300">
+                  <img class="slider-image" src="img/content/slide2-m.jpg" width="280" height="300" alt="Изображение поезда">
                 </picture>
                 <a class="slider-link" href="">Железнодорожные грузоперевозки</a>
               </li>
@@ -94,10 +94,12 @@
           <h2 class="price-title">Стоимость перевозки</h2>
           <table class="price-table">
             <thead class="table-head">
-              <td class="table-item">Город назначения</td>
-              <td class="table-item">Контейнер 20 футов</td>
-              <td class="table-item">Контейнер 40 футов</td>
-              <td class="table-item">Контейнер 45 футов</td>
+              <tr class="table-row">
+                <td class="table-item">Город назначения</td>
+                <td class="table-item">Контейнер 20 футов</td>
+                <td class="table-item">Контейнер 40 футов</td>
+                <td class="table-item">Контейнер 45 футов</td>
+              </tr>
             </thead>
             <tr class="table-row">
               <td class="table-item">г. Иркутск</td>
@@ -184,7 +186,7 @@
                 <p class="catalog-text">Открытый контейнер с мягкой съемной крышей</p>
               </div>
             </li>
-            <li class="catalog-item" alt="">
+            <li class="catalog-item">
               <picture>
                 <source type="image/webp" srcset="img/content/catalog/catalog-flat-m.webp">
 
@@ -200,7 +202,7 @@
 
         <section class="contact container">
           <h2 class="contact-title">Свяжитесь с нами</h2>
-          <form class="contact-form" action="" method="post">
+          <form class="contact-form" method="post">
             <div class="name">
               <label class="visually-hidden" for="name">Имя:</label>
               <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя*" required>
