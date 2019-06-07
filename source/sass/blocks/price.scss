@@ -1,0 +1,43 @@
+.price {
+  background-image: linear-gradient(to bottom, #505465 0%, #505465 50%, #ffffff 50%, #ffffff 100%);
+}
+
+.price-content {
+  padding: 34px $padding-mobile 41px;
+  background-color: #f99629;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%);
+  box-shadow: 5px 8.66px 25px rgba(30,27,25,0.3);
+}
+
+.price-title {
+  @include font(36px, 45px, 800);
+  color: #ffffff;
+  margin: 0;
+}
+
+.table-wrapper {
+  margin-top: 60px;
+  overflow: auto;
+}
+
+.price-table {
+  border-collapse: collapse;
+  margin-bottom: 31px;
+}
+
+.table-item {
+  padding: 15px 20px 10px 0;
+  border-bottom: 1px solid rgba(#ffffff, 0.5);
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.table-head {
+  font-weight: 600;
+
+  & .table-item {
+    border-color: #ffffff;
+  }
+}
