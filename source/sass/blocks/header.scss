@@ -1,0 +1,43 @@
+.header {
+  height: 400px;
+  background-image: url("../img/decor/header-bg-m.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
+  background-repeat: no-repeat;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding-top: 21px;
+}
+
+.tel-number {
+  display: none;
+}
+
+.callback {
+  margin-left: auto;
+}
+
+.call-btn {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  background: #ffffff url("../../img/decor/Phone_contact.png") no-repeat center;
+  background-size: 19px 19px;
+  border-radius: 50%;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin-left: 18px;
+  width: 28px;
+  height: 20px;
+  background: transparent url("../img/decor/icon-menu-open.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-site {
+  display: none;
+}
