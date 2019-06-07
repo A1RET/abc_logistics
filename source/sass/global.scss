@@ -1,0 +1,20 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+
+  @include font;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    @include font;
+    position: relative;
+  }
+}
