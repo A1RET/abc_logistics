@@ -1,0 +1,54 @@
+.promo {
+  @include font(14px, 52px);
+  color: #ffffff;
+  padding-top: 1px;
+  padding-bottom: 59px;
+  background-color: #505465;
+}
+
+.promo-list {
+  @include list;
+  margin-top: 79px;
+}
+
+.promo-item {
+  position: relative;
+  height: 52px;
+  padding-left: 80px;
+
+  &:not(:first-child) {
+    margin-top: 29px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &-term::before {
+    background-image: url("../../img/decor/promo-term.png");
+  }
+
+  &-map::before {
+    background-image: url("../../img/decor/promo-map.png");
+  }
+
+  &-weight::before {
+    background-image: url("../../img/decor/promo-weight.png");
+  }
+
+  &-geo::before {
+    background-image: url("../../img/decor/promo-geo.png");
+  }
+
+  &-tariff::before {
+    background-image: url("../../img/decor/promo-tariff.png");
+  }
+}
