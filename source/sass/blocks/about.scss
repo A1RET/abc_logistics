@@ -1,0 +1,33 @@
+.about-contacts {
+  line-height: 30px;
+  padding-bottom: 52px;
+}
+
+.about-section-title {
+  @include font(38px, 70px);
+}
+
+.about-title {
+  margin: 20px 0 12px;
+}
+
+.about-address {
+  font-style: normal;
+}
+
+.about-text {
+  margin: 0;
+
+  & a {
+    color: #272b31;
+    text-decoration: underline;
+  }
+}
+
+.about-btn {
+  margin-top: 15px;
+}
+
+.map {
+  padding: 0;
+}
