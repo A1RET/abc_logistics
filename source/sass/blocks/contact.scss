@@ -8,6 +8,7 @@
 .contact-title {
   @include font(29px, 45px);
   width: 150px;
+  margin: 0;
 }
 
 .contact-form .form-input {
@@ -69,4 +70,61 @@
 .form-button {
   width: 100%;
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    padding: 64px 3 * $padding-mobile 81px;
+  }
+
+  .contact-title {
+    @include font(54px, 70px 300);
+    width: auto;
+    text-align: center;
+  }
+
+  .contact-form {
+    margin-top: 70px;
+  }
+
+  .form-container {
+    display: flex;
+  }
+
+  .form-left,
+  .message {
+    width: 300px;
+  }
+
+  .form-left {
+    margin-right: 2 * $padding-mobile;
+  }
+
+  .email {
+    & .form-input {
+     margin-bottom: 0;
+    }
+  }
+
+  .message {
+    & .form-input {
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+  }
+
+  .license-text {
+    width: auto;
+  }
+
+  .form-button {
+    width: 190px;
+    margin-top: 0;
+  }
 }
