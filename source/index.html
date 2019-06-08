@@ -19,8 +19,10 @@
         <div class="container">
           <div class="header-top">
             <picture>
+              <source media="(min-width: 760px)" type="image/webp" srcset="img/content/logo-t.webp">
               <source type="image/webp" srcset="img/content/logo-m.webp">
 
+              <source media="(min-width: 760px)" srcset="img/content/logo-t.jpg">
               <img class="header-logo" src="img/content/logo-m.png" width="128" height="32" alt="Логотип ABC Logistics">
             </picture>
             <div class="callback">
@@ -45,31 +47,33 @@
             <ul class="slider-list">
               <li class="slider-item">
                 <picture>
+                  <source media="(min-width: 760px)" type="image/webp" srcset="img/content/slide1-t.webp">
                   <source type="image/webp" srcset="img/content/slide1-m.webp">
 
+                  <source media="(min-width: 760px)" srcset="img/content/slide1-t.jpg">
                   <img class="slider-image" src="img/content/slide1-m.jpg" width="280" height="300" alt="Изображение грузовика">
                 </picture>
                 <a class="slider-link" href="">Контейнерные грузоперевозки</a>
               </li>
               <li class="slider-item">
                 <picture>
+                  <source media="(min-width: 760px)" type="image/webp" srcset="img/content/slide2-t.webp">
                   <source type="image/webp" srcset="img/content/slide2-m.webp">
 
+                  <source media="(min-width: 760px)" srcset="img/content/slide2-t.jpg">
                   <img class="slider-image" src="img/content/slide2-m.jpg" width="280" height="300" alt="Изображение поезда">
                 </picture>
                 <a class="slider-link" href="">Железнодорожные грузоперевозки</a>
               </li>
             </ul>
             <div class="slider-nav">
-              <button class="slider-btn slider-prev">
-                <span class="visually-hidden">Предыдущий слайд</span>
+              <button class="slider-btn slider-prev" aria-label="Предыдущий слайд">
                 <svg class="slider-btn-image">
                   <use xlink:href="#slide-arrow"></use>
                 </svg>
               </button>
 
-              <button class="slider-btn slider-next">
-                <span class="visually-hidden">Следующий слайд</span>
+              <button class="slider-btn slider-next" aria-label="Следующий слайд">
                 <svg class="slider-btn-image">
                   <use xlink:href="#slide-arrow"></use>
                 </svg>

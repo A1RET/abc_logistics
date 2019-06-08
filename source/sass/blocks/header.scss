@@ -42,6 +42,7 @@
   width: 28px;
   height: 20px;
   background: transparent  no-repeat center;
+  background-size: cover;
   border: none;
   cursor: pointer;
 
@@ -98,6 +99,44 @@
     @include font(18px, 60px, 600);
     margin-top: 103px;
     display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    height: 550px;
+    background-image: url("../img/decor/header-bg-t.jpg");
+  }
+
+  .header-top {
+    padding-top: 30px;
+  }
+
+  .header-logo {
+    width: 194px;
+    height: 48px;
+  }
+
+  .tel-number {
+    @include font(16px, 15px, 700);
+    color: #ffffff;
+    display: inline;
+  }
+
+  .call-btn {
+    @include font(14px, 15px);
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    padding: 18px 20px 18px 47px;
+    border-radius: 23px;
+    background-position: 20px center;
+  }
+
+  .nav-btn {
+    margin-left: 22px;
+    width: 34px;
+    height: 27px;
   }
 }
 

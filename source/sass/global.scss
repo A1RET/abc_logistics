@@ -23,9 +23,8 @@ a {
   border-radius: 23px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   body {
-    @include font;
-    position: relative;
+    @include font(18px, 20px);
   }
 }

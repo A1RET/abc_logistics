@@ -15,8 +15,9 @@
 
 .slider-item {
   position: relative;
+  min-height: 300px;
+  box-sizing: border-box;
   padding-top: 150px;
-  padding-bottom: 80px;
 }
 
 .slider-image {
@@ -43,6 +44,7 @@
 }
 
 .slider-btn {
+  position: relative;
   width: 32px;
   height: 32px;
   background-color: #ffffff;
@@ -56,12 +58,55 @@
 }
 
 .slider-btn-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 8px;
   height: 13px;
+  transform: translate(-50%, -50%);
 }
 
 .slider-next .slider-btn-image {
-  transform: scaleX(-1);
+  transform: translate(-50%, -50%) scaleX(-1);
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    margin-left: 2 * $padding-mobile;
+    margin-right: 2 * $padding-mobile;
+  }
+
+  .slider-item {
+    min-height: 440px;
+    padding-top: 205px;
+  }
+
+  .slider-image {
+    width: 640px;
+    height: 440px;
+  }
+
+  .slider-link {
+    @include font(60px, 65px, 600);
+  }
+
+  .slider-nav {
+    bottom: 30px;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  .slider-btn-image {
+    width: 11px;
+    height: 17px;
+  }
 }
 
 
