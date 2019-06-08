@@ -12,6 +12,16 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 19px 35px 18px;
+  background-color: #f9a03e;
+  border: none;
+  border-radius: 23px;
+}
+
 @media (min-width: $desktop-width) {
   body {
     @include font;
