@@ -27,4 +27,8 @@ a {
   body {
     @include font(18px, 20px);
   }
+
+  .btn {
+    @include font(16px, 19px, 600);
+  }
 }
