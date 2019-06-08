@@ -88,9 +88,11 @@
 
   .slider-link {
     @include font(60px, 65px, 600);
+    margin-left: 2 * $padding-mobile;
   }
 
   .slider-nav {
+    left: 2 * $padding-mobile;
     bottom: 30px;
   }
 
