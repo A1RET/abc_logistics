@@ -17,6 +17,7 @@
 }
 
 .table-wrapper {
+  position: relative;
   margin-top: 60px;
   overflow: auto;
 
@@ -53,6 +54,7 @@
 
 .price-table {
   border-collapse: collapse;
+  margin-bottom: 31px;
 }
 
 .table-item {
