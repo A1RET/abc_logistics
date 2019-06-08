@@ -10,6 +10,13 @@
   padding-top: 21px;
 }
 
+.header-logo-modal {
+  position: absolute;
+  z-index: 105;
+  top: 21px;
+  left: $padding-mobile;
+}
+
 .tel-number {
   display: none;
 }
@@ -33,11 +40,47 @@
   margin-left: 18px;
   width: 28px;
   height: 20px;
-  background: transparent url("../img/decor/icon-menu-open.svg") no-repeat center;
+  background: transparent  no-repeat center;
   border: none;
   cursor: pointer;
+
+  &-closed {
+    background-image: url("../img/decor/icon-menu-open.svg");
+  }
+
+  &-opened {
+    position: absolute;
+    z-index: 105;
+    top: 21px;
+    right: $padding-mobile;
+    background-image: url("../img/decor/icon-menu-close.svg");
+  }
 }
 
 .nav-site {
   display: none;
 }
+
+.nav-site-modal {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #4b5360;
+
+  & .nav-list {
+    @include list;
+    @include font(18px, 60px, 600);
+    text-align: center;
+    margin-top: 103px;
+  }
+
+  & .nav-link {
+    color: #ffffff;
+  }
+}
+
+
