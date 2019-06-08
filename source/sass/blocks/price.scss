@@ -5,7 +5,8 @@
 .price-content {
   padding: 34px $padding-mobile 41px;
   background-color: #f99629;
-  background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%);
+  background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%), url("../../img/decor/table-bg-m.jpg");
+  background-repeat: no-repeat;
   box-shadow: 5px 8.66px 25px rgba(30,27,25,0.3);
 }
 
