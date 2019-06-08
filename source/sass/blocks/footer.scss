@@ -29,3 +29,27 @@
 .footer-link {
   color: #a1a4a7;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    @include font(12px, 19px);
+    padding-right: 4 * $padding-mobile;
+  }
+
+  .footer picture {
+    width: auto;
+  }
+
+  .footer-logo {
+    width: 194px;
+    height: 48px;
+  }
+
+  .copyright {
+    width: 124px;
+  }
+
+  .footer-links {
+    width: 180px;
+  }
+}
