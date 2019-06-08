@@ -255,19 +255,27 @@
         </section>
 
         <section class="about">
-          <div class="about-contacts container">
+          <div class="about-container container">
             <h2 class="about-section-title">Контакты</h2>
-            <h3 class="about-title">Наш офис</h3>
-            <address class="about-address">Россия, 620014, Екатеринбург<br>ул. Маршала Жукова, 10</address>
-            <h3 class="about-title">Вы можете связаться с нами</h3>
-            <p class="about-text">Т: +7 (343) 999-88-77</p>
-            <p class="about-text">@: <a href="mailto:example@mail.com">example@mail.com</a></p>
-
+            <div class="about-contacts">
+              <div>
+                <h3 class="about-title">Наш офис</h3>
+                <address class="about-address">Россия, 620014, Екатеринбург<br>ул. Маршала Жукова, 10</address>
+              </div>
+              <div>
+                <h3 class="about-title">Вы можете связаться с нами</h3>
+                <p class="about-text">Т: +7 (343) 999-88-77</p>
+                <p class="about-text">@: <a href="mailto:example@mail.com">example@mail.com</a></p>
+              </div>
+            </div>
             <a class="about-btn btn" href="">Заказать звонок</a>
           </div>
           <div class="map container">
             <picture>
+              <source media="(min-width: 760px)" type="image/webp" srcset="img/content/map-t.webp">
               <source type="image/webp" srcset="img/content/map-m.webp">
+
+              <source media="(min-width: 760px)" srcset="img/content/map-t.jpg">
               <img class="map-image" src="img/content/map-m.jpg" width="320" height="380" alt="Россия, 620014, Екатеринбур, ул. Маршала Жукова, 10">
             </picture>
           </div>
