@@ -1,0 +1,51 @@
+.call-page,
+.modal {
+  & .wrapper {
+    background: #4b5360;
+  }
+
+  & header {
+    height: auto;
+    background: transparent;
+  }
+
+  & .call-form {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 $padding-mobile;
+
+    & .contact-title {
+      margin:0 auto 50px;
+    }
+
+    & div {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    & .form-button {
+      margin-top: 41px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .call-page,
+  .modal {
+    & .call-form {
+      & .contact-title {
+        margin-bottom: 96px;
+      }
+
+      & div {
+        width: 350px;
+        margin: 0 auto;
+      }
+
+      & .form-button {
+        margin-top: 41px;
+      }
+    }
+  }
+}
