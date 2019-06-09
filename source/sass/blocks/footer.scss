@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     @include font(12px, 19px);
-    padding-right: 4 * $padding-mobile;
+    padding-right: 4 * $padding-tablet;
   }
 
   .footer picture {
@@ -51,5 +51,29 @@
 
   .footer-links {
     width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-right: $padding-desktop;
+    justify-content: flex-start;
+  }
+
+  .footer picture {
+    margin-right: 60px;
+  }
+
+  .copyright {
+    width: auto;
+  }
+
+  .footer-links {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .footer-link {
+    margin-left: 24px;
   }
 }
