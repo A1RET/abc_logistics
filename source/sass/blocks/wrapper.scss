@@ -16,3 +16,9 @@
     width: $desktop-width;
   }
 }
+
+@media (min-width: $desktop-width-l) {
+  .wrapper {
+    width: $desktop-width-l;
+  }
+}

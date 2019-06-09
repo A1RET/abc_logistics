@@ -179,3 +179,39 @@
       @include font(16px, 19px, 600);
    }
 }
+
+@media (min-width: $desktop-width-l) {
+  .header {
+    height: 680px;
+    background-image: url("../img/decor/header-bg-d1920.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
+    background-position: 0 -55px;
+  }
+
+  .header-top {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .header-top > picture {
+    order: 1;
+  }
+
+  .header-logo {
+    width: 242px;
+    height: 60px;
+  }
+
+  .callback {
+    order: 2;
+  }
+
+  .nav-site {
+    order: 1;
+    width: 640px;
+    margin-left: 240px;
+  }
+
+  .nav-list {
+    margin: 0;
+  }
+}

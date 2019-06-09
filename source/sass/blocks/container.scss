@@ -16,3 +16,10 @@
     padding-right: $padding-desktop;
   }
 }
+
+@media (min-width: $desktop-width-l) {
+  .container {
+    padding-left: $padding-desktop-l;
+    padding-right: $padding-desktop-l;
+  }
+}

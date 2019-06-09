@@ -132,4 +132,31 @@
   }
 }
 
+@media (min-width: $desktop-width-l) {
+  .slider {
+    margin-top: 75px;
+    margin-left: $padding-inner-desktop-l;
+    margin-right: $padding-inner-desktop-l;
+  }
+
+  .slider-item {
+    min-height: 560px;
+    padding-top: 265px;
+  }
+
+  .slider-image {
+    width: 1100px;
+    height: 560px;
+  }
+
+  .slider-link {
+    margin-left: 70px;
+  }
+
+  .slider-nav {
+    left: 70px;
+    bottom: 53px;
+  }
+}
+
 
