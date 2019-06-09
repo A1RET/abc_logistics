@@ -114,6 +114,7 @@
     & .form-input {
       margin-bottom: 0;
       height: 100%;
+      box-sizing: border-box;
     }
   }
 
@@ -128,7 +129,7 @@
   }
 
   .license-text {
-    width: auto;
+    width: 370px;
   }
 
   .form-button {
@@ -149,5 +150,36 @@
 
   .message {
     width: 460px;
+  }
+}
+
+@media (min-width: $desktop-width-l) {
+  .contact {
+    margin-top: 100px;
+    padding: 64px $padding-desktop-l + $padding-inner-desktop-l 81px;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+
+    & > div {
+      width: 350px;
+    }
+  }
+
+  .message {
+    width: 100%;
+    min-height: 80px;
+  }
+
+  .license-text {
+    width: auto;
   }
 }
