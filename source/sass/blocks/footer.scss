@@ -77,3 +77,27 @@
     margin-left: 24px;
   }
 }
+
+@media (min-width: $desktop-width-l) {
+  .footer {
+    padding-left: 2 * $padding-desktop-l;
+    padding-right: 2 * $padding-desktop-l;
+  }
+
+  .footer picture {
+    margin-right: 160px;
+  }
+
+  .copyright {
+    width: auto;
+  }
+
+  .footer-links {
+    width: auto;
+    margin-left: auto;
+  }
+
+  .footer-link {
+    margin-left: 24px;
+  }
+}
