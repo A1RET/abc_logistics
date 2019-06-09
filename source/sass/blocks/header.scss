@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 16px;
 }
 
 .header-logo-modal {
@@ -32,7 +32,7 @@
   height: 36px;
   font-size: 0;
   background: #ffffff url("../img/decor/Phone_contact.png") no-repeat center;
-  background-size: 19px 19px;
+  background-size: 15px 15px;
   border-radius: 50%;
 }
 
@@ -49,7 +49,7 @@
   &-opened {
     position: absolute;
     z-index: 105;
-    top: 21px;
+    top: 25px;
     right: $padding-mobile;
     background-image: url("../img/decor/icon-menu-close.svg");
   }
@@ -92,7 +92,7 @@
   background-color: #4b5360;
 
   & .nav-list {
-    @include font(18px, 60px, 600);
+    @include font(18px, 46px, 600);
     margin-top: 103px;
     display: block;
   }

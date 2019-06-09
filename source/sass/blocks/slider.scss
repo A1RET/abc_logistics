@@ -4,7 +4,7 @@
 
 .slider {
   position: relative;
-  margin-top: 64px;
+  margin-top: 68px;
   box-shadow: 5px 8.66px 25px rgba(30,27,25,0.3);
 }
 
@@ -17,7 +17,7 @@
   position: relative;
   min-height: 300px;
   box-sizing: border-box;
-  padding-top: 150px;
+  padding-top: 152px;
 }
 
 .slider-image {
@@ -40,7 +40,7 @@
 .slider-nav {
   position: absolute;
   left: $padding-mobile;
-  bottom: 20px;
+  bottom: 19px;
 }
 
 .slider-btn {
@@ -53,7 +53,7 @@
   cursor: pointer;
 
   &:first-child {
-    margin-right: 24px;
+    margin-right: 22px;
   }
 }
 

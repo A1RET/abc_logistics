@@ -15,14 +15,13 @@
 
 .promo-item {
   position: relative;
-  margin: 0 auto;
   height: 52px;
   padding-left: 80px;
   opacity: 0.8;
   cursor: pointer;
 
   &:not(:first-child) {
-    margin-top: 29px;
+    margin-top: 28px;
   }
 
   &::before {
@@ -72,6 +71,7 @@
   }
 
   .promo-item {
+    margin: 0 auto;
     padding-left: 90px;
     height: 64px;
 

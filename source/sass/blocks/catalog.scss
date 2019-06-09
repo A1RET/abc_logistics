@@ -6,6 +6,10 @@
   @include list;
 }
 
+.catalog-item {
+  margin-top: 36px;
+}
+
 .catalog-title {
   @include font(18px, 20px, 600);
 }
