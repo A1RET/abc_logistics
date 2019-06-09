@@ -52,9 +52,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 63px;
+  }
+
   .catalog-item {
     width: 290px;
-    margin-top: 13px;
+    margin-top: 28px;
 
     &:last-child {
       margin-right: auto;

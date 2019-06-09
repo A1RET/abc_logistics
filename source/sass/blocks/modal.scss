@@ -54,4 +54,16 @@
     top: 42px;
     right: 26px;
   }
+
+  .modal .form-button {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+   & .call-form .form-button {
+      margin-top: 10px;
+    }
+  }
 }

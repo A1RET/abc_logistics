@@ -120,6 +120,10 @@
     padding-left: 3 * $padding + $padding-desktop;
     padding-right: 3 * $padding + $padding-desktop;
   }
+
+  .table-item {
+    padding-right: 0;
+  }
 }
 
 @media (min-width: $desktop-width-l) {

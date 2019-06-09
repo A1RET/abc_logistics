@@ -90,19 +90,21 @@
 @media (min-width: $desktop-width) {
   .promo {
     line-height: 24px;
+    padding-bottom: 82px;
   }
 
   .promo-list {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    margin-left: $padding;
+    margin-top: 123px;
+    margin-left: 0;
   }
 
   .promo-item {
     width: 160px;
     margin: 0;
-    padding-top: 94px;
+    padding-top: 90px;
     padding-left: 0;
 
     &:not(:first-child) {
