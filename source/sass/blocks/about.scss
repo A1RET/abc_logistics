@@ -66,3 +66,28 @@
     height: 510px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    display: flex;
+  }
+
+  .about-container {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .about-contacts {
+    flex-direction: column;
+  }
+
+  .map {
+    width: 50%;
+    height: 650px;
+  }
+
+  .map-image {
+    left: 0;
+    transform: translateX(-50%);
+  }
+}
