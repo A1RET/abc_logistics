@@ -53,6 +53,7 @@
 }
 
 .price-table {
+  width: 100%;
   border-collapse: collapse;
   margin-bottom: 31px;
 }
@@ -81,7 +82,7 @@
     padding-right: 3 * $padding-tablet;
   }
 
-  .price-content{
+  .price-content {
     padding: 64px 2 * $padding-mobile 80px;
     background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%), url("../../img/decor/table-bg-t.jpg");
   }
@@ -100,11 +101,26 @@
       padding-right: 35px;
     }
   }
+
+  .table-head br {
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .price {
     padding-left: 3 * $padding + $padding-desktop;
     padding-right: 3 * $padding + $padding-desktop;
+  }
+}
+
+@media (min-width: $desktop-width-l) {
+  .price {
+    padding-left: $padding-desktop-l + $padding-inner-desktop-l;
+    padding-right: $padding-desktop-l + $padding-inner-desktop-l;
+  }
+
+  .price-content {
+    padding: 64px $padding-content-desktop-l 80px;
   }
 }
