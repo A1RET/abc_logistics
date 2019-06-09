@@ -77,8 +77,8 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding-left: 3 * $padding-mobile;
-    padding-right: 3 * $padding-mobile;
+    padding-left: 3 * $padding-tablet;
+    padding-right: 3 * $padding-tablet;
   }
 
   .price-content{
@@ -99,5 +99,12 @@
     &-large {
       padding-right: 35px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-left: 3 * $padding + $padding-desktop;
+    padding-right: 3 * $padding + $padding-desktop;
   }
 }
