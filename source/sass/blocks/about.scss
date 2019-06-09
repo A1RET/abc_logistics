@@ -91,3 +91,13 @@
     transform: translateX(-50%);
   }
 }
+
+@media (min-width: $desktop-width-l) {
+  .about-container {
+    padding-left: 2 * $padding-desktop-l;
+  }
+
+  .map-image {
+    transform: translateX(-45%);
+  }
+}
