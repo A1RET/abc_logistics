@@ -39,3 +39,23 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 290px;
+    margin-top: 13px;
+
+    &:last-child {
+      margin-right: auto;
+
+      &:not(:nth-child(3n+1)) {
+        margin-left: 4.8%;
+      }
+    }
+  }
+
+  .catalog-image {
+    width: 290px;
+    height: 185px;
+  }
+}
