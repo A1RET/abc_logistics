@@ -18,6 +18,8 @@
   margin: 0 auto;
   height: 52px;
   padding-left: 80px;
+  opacity: 0.8;
+  cursor: pointer;
 
   &:not(:first-child) {
     margin-top: 29px;
@@ -54,6 +56,10 @@
   &-tariff::before {
     background-image: url("../img/decor/promo-tariff.png");
   }
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -76,6 +82,33 @@
     &::before {
       width: 64px;
       height: 64px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    line-height: 24px;
+  }
+
+  .promo-list {
+    flex-direction: row;
+    text-align: center;
+    margin-left: $padding;
+  }
+
+  .promo-item {
+    width: 160px;
+    padding-top: 94px;
+    padding-left: 0;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
