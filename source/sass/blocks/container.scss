@@ -2,3 +2,17 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}

@@ -72,8 +72,8 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    margin-left: 2 * $padding-mobile;
-    margin-right: 2 * $padding-mobile;
+    margin-left: 2 * $padding;
+    margin-right: 2 * $padding;
   }
 
   .slider-item {
@@ -88,11 +88,11 @@
 
   .slider-link {
     @include font(60px, 65px, 600);
-    margin-left: 2 * $padding-mobile;
+    margin-left: 2 * $padding;
   }
 
   .slider-nav {
-    left: 2 * $padding-mobile;
+    left: 2 * $padding;
     bottom: 30px;
   }
 
@@ -108,6 +108,27 @@
   .slider-btn-image {
     width: 11px;
     height: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin-top: 30px;
+    margin-left: 3 * $padding;
+    margin-right: 3 * $padding;
+  }
+
+  .slider-item {
+    padding-top: 175px;
+  }
+
+  .slider-image {
+    width: 840px;
+    height: 440px;
+  }
+
+  .slider-link {
+    @include font(70px, 75px, 600);
   }
 }
 

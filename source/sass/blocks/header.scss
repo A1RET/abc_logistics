@@ -105,7 +105,7 @@
 @media (min-width: $tablet-width) {
   .header {
     height: 550px;
-    background-image: url("../img/decor/header-bg-t.jpg");
+    background-image: url("../img/decor/header-bg-t.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
   }
 
   .header-top {
@@ -115,6 +115,10 @@
   .header-logo {
     width: 194px;
     height: 48px;
+  }
+
+  .header-logo-modal {
+    left: $padding-tablet;
   }
 
   .tel-number {
@@ -137,7 +141,41 @@
     margin-left: 22px;
     width: 34px;
     height: 27px;
+
+    &-opened {
+      right: $padding-tablet;
+    }
   }
 }
 
+@media (min-width: $desktop-width) {
+  .header {
+    background-image: url("../img/decor/header-bg-d.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
+  }
 
+  .nav-checkbox {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-site {
+    display: block;
+  }
+
+  .nav-list {
+    flex-wrap: nowrap;
+    margin: 25px 160px 0;
+   }
+
+   .nav-item {
+      margin-top: 0;
+      flex-basis: auto;
+   }
+
+   .nav-link {
+      @include font(16px, 19px, 600);
+   }
+}
