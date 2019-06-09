@@ -181,8 +181,20 @@
 
 @media (min-width: $desktop-width-l) {
   .contact {
-    margin-top: 100px;
-    padding: 64px $padding-desktop-l + $padding-inner-desktop-l 81px;
+    margin-top: 106px;
+    padding: 70px $padding-desktop-l + $padding-inner-desktop-l 72px;
+  }
+
+  .contact-title {
+    @include font(70px, 70px);
+  }
+
+  .contact-form {
+    margin-top: 61px;
+  }
+
+  .contact-form textarea {
+    min-height: 80px;
   }
 
   .form-container {
@@ -203,6 +215,10 @@
   .message {
     width: 100%;
     min-height: 80px;
+  }
+
+  .form-footer {
+    margin-top: 57px;
   }
 
   .license-text {

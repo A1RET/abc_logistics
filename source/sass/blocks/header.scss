@@ -190,6 +190,7 @@
   .header-top {
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding-top: 50px;
   }
 
   .header-top > picture {
@@ -205,10 +206,23 @@
     order: 2;
   }
 
+  .tel-number {
+    @include font(18px, 19px, 700);
+  }
+
+  .call-btn {
+    font-size: 16px;
+    margin-left: 24px;
+    padding: 21px 30px 21px 62px;
+    border-radius: 28px;
+    background-position: 30px center;
+    background-size: 23px 22px;
+  }
+
   .nav-site {
     order: 1;
-    width: 640px;
-    margin-left: 240px;
+    width: 620px;
+    margin-left: 247px;
   }
 
   .nav-list {

@@ -134,14 +134,14 @@
 
 @media (min-width: $desktop-width-l) {
   .slider {
-    margin-top: 75px;
+    margin-top: 57px;
     margin-left: $padding-inner-desktop-l;
     margin-right: $padding-inner-desktop-l;
   }
 
   .slider-item {
     min-height: 560px;
-    padding-top: 265px;
+    padding-top: 250px;
   }
 
   .slider-image {
@@ -150,6 +150,7 @@
   }
 
   .slider-link {
+    @include font(80px, 85px, 600);
     margin-left: $padding-content-desktop-l;
   }
 

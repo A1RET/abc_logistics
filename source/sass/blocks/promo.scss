@@ -121,15 +121,17 @@
 @media (min-width: $desktop-width-l) {
   .promo {
     @include font(22px, 30px);
-    padding-bottom: 110px;
+    padding-bottom: 108px;
   }
 
   .promo-list {
-    margin-left: $padding-desktop-l;
+    margin-top: 143px;
+    margin-left: $padding-desktop-l - 20px;
     margin-right: $padding-desktop-l - 40px;
   }
 
   .promo-item {
     width: 180px;
+    padding-top: 95px;
   }
 }

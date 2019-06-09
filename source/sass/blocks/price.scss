@@ -132,7 +132,11 @@
     padding-right: $padding-desktop-l + $padding-inner-desktop-l;
   }
 
+  .price-title {
+    @include font(70px, 70px, 800);
+  }
+
   .price-content {
-    padding: 64px $padding-content-desktop-l 80px;
+    padding: 58px $padding-content-desktop-l 72px;
   }
 }

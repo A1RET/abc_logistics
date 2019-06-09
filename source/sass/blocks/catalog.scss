@@ -77,11 +77,12 @@
 
 @media (min-width: $desktop-width-l) {
   .catalog-list {
-    margin: $padding-desktop-l;
+    margin: 88px $padding-desktop-l 0;
   }
 
   .catalog-item {
     width: 400px;
+    margin-top: 31px;
 
     &:last-child {
       margin-right: auto;
