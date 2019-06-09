@@ -59,3 +59,26 @@
     height: 185px;
   }
 }
+
+@media (min-width: $desktop-width-l) {
+  .catalog-list {
+    margin: $padding-desktop-l;
+  }
+
+  .catalog-item {
+    width: 400px;
+
+    &:last-child {
+      margin-right: auto;
+
+      &:not(:nth-child(3n+1)) {
+        margin-left: 3.125%;
+      }
+    }
+  }
+
+  .catalog-image {
+    width: 400px;
+    height: 260px;
+  }
+}
