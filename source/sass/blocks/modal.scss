@@ -1,5 +1,19 @@
 .modal {
   display: none;
+  position: fixed;
+  z-index: 120;
+  top: 70px;
+  left: 50%;
+  min-width: 320px;
+  transform: translateX(-50%);
+}
+
+.modal-content {
+  margin-top: 70px;
+}
+
+.modal-overlay {
+  display: none;
   position: absolute;
   z-index: 100;
   top: 0;
@@ -9,12 +23,9 @@
   background: #4b5360;
 }
 
-.modal-content {
-  margin-top: 70px;
-}
-
 .close-modal {
   display: inline-block;
+  position: absolute;
   margin-left: 18px;
   width: 28px;
   height: 20px;
@@ -22,7 +33,6 @@
   background-size: cover;
   border: none;
   cursor: pointer;
-  position: absolute;
   top: 21px;
   right: $padding-mobile;
   background-image: url("../img/decor/icon-menu-close.svg");
