@@ -41,14 +41,10 @@
   margin-left: 18px;
   width: 28px;
   height: 20px;
-  background: transparent  no-repeat center;
+  background: transparent url("../img/decor/icon-menu-open.svg") no-repeat center;
   background-size: cover;
   border: none;
   cursor: pointer;
-
-  &-closed {
-    background-image: url("../img/decor/icon-menu-open.svg");
-  }
 
   &-opened {
     position: absolute;
