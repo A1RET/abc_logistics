@@ -1,0 +1,29 @@
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #4b5360;
+}
+
+.modal-content {
+  margin-top: 70px;
+}
+
+.close-modal {
+  display: inline-block;
+  margin-left: 18px;
+  width: 28px;
+  height: 20px;
+  background: transparent  no-repeat center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: $padding-mobile;
+  background-image: url("../img/decor/icon-menu-close.svg");
+}

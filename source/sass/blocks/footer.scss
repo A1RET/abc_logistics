@@ -9,7 +9,7 @@
   background-color: #4b5360;
 }
 
-.footer picture {
+.footer .logo-link {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -36,7 +36,7 @@
     padding-right: 4 * $padding-tablet;
   }
 
-  .footer picture {
+  .footer .logo-link {
     width: auto;
   }
 
@@ -60,7 +60,7 @@
     justify-content: flex-start;
   }
 
-  .footer picture {
+  .footer .logo-link {
     margin-right: 60px;
   }
 
@@ -84,7 +84,7 @@
     padding-right: 2 * $padding-desktop-l;
   }
 
-  .footer picture {
+  .footer .logo-link {
     margin-right: 160px;
   }
 

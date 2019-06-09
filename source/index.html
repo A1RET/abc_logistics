@@ -18,18 +18,20 @@
         <h1 class="visually-hidden">Логистическая компания ABC Logistics</h1>
         <div class="container">
           <div class="header-top">
-            <picture>
-              <source media="(min-width: 1920px)" type="image/webp" srcset="img/content/logo-d1920.webp">
-              <source media="(min-width: 760px)" type="image/webp" srcset="img/content/logo-t.webp">
-              <source type="image/webp" srcset="img/content/logo-m.webp">
+            <a class="logo-link" href="">
+              <picture>
+                <source media="(min-width: 1920px)" type="image/webp" srcset="img/content/logo-d1920.webp">
+                <source media="(min-width: 760px)" type="image/webp" srcset="img/content/logo-t.webp">
+                <source type="image/webp" srcset="img/content/logo-m.webp">
 
-              <source media="(min-width: 1920px)" srcset="img/content/logo-d1920.jpg">
-              <source media="(min-width: 760px)" srcset="img/content/logo-t.jpg">
-              <img class="header-logo" src="img/content/logo-m.png" width="128" height="32" alt="Логотип ABC Logistics">
-            </picture>
+                <source media="(min-width: 1920px)" srcset="img/content/logo-d1920.jpg">
+                <source media="(min-width: 760px)" srcset="img/content/logo-t.jpg">
+                <img class="header-logo" src="img/content/logo-m.png" width="128" height="32" alt="Логотип ABC Logistics">
+              </picture>
+            </a>
             <div class="callback">
               <span class="tel-number">+7 (343) 999-88-77</span>
-              <a class="call-btn" href="">Заказать звонок</a>
+              <a class="call-btn" href="call.html">Заказать звонок</a>
             </div>
             <input class="nav-checkbox visually-hidden" type="checkbox" name="nav-open" id="nav-open">
             <label class="nav-btn nav-btn-closed" for="nav-open"><span class="visually-hidden">Открыть меню</span></label>
@@ -302,17 +304,25 @@
 
       <footer class="footer container">
         <picture>
-          <source media="(min-width: 760px)" type="image/webp" srcset="img/content/logo-t.webp">
-          <source type="image/webp" srcset="img/content/logo-m.webp">
+          <a class="logo-link" href="">
+            <source media="(min-width: 1920px)" type="image/webp" srcset="img/content/logo-d1920.webp">
+            <source media="(min-width: 760px)" type="image/webp" srcset="img/content/logo-t.webp">
+            <source type="image/webp" srcset="img/content/logo-m.webp">
 
-          <source media="(min-width: 760px)" srcset="img/content/logo-t.jpg">
-          <img class="footer-logo" src="img/content/logo-m.png" width="128" height="32" alt="Логотип ABC Logistics">
-        </picture>
+            <source media="(min-width: 1920px)" srcset="img/content/logo-d1920.jpg">
+            <source media="(min-width: 760px)" srcset="img/content/logo-t.jpg">
+            <img class="footer-logo" src="img/content/logo-m.png" width="128" height="32" alt="Логотип ABC Logistics">
+          </picture>
+        </a>
         <p class="copyright">© 2018 ABC Logistics. Все права защищены</p>
         <p class="footer-links">
           <a class="footer-link" href="">Политика конфиденциальности</a> <a class="footer-link" href="">Карта сайта</a>
         </p>
       </footer>
+      <section class="modal container">
+        <button class="close-modal" for="nav-open"><span class="visually-hidden">Закрыть окно</span></button>
+        <div class="modal-content"></div>
+      </section>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
