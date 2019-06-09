@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-.contact-form .form-input {
+.form-input {
   @include font(11px, 40px);
   color: #ffffff;
   width: 100%;
@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .contact {
-    padding: 64px 3 * $padding-mobile 81px;
+    padding: 64px 3 * $padding-tablet 81px;
   }
 
   .contact-title {
@@ -101,7 +101,7 @@
   }
 
   .form-left {
-    margin-right: 2 * $padding-mobile;
+    margin-right: 2 * $padding-tablet;
   }
 
   .email {
@@ -134,5 +134,20 @@
   .form-button {
     width: 190px;
     margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    margin-top: 100px;
+    padding: 64px 3 * $padding + $padding-desktop 81px;
+  }
+
+  .form-left {
+    width: 350px;
+  }
+
+  .message {
+    width: 460px;
   }
 }
