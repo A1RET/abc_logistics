@@ -33,6 +33,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     @include font(12px, 19px);
+    padding-top: 47px;
     padding-right: 4 * $padding-tablet;
   }
 
@@ -47,10 +48,12 @@
 
   .copyright {
     width: 124px;
+    margin: 0;
   }
 
   .footer-links {
     width: 180px;
+    margin: 0;
   }
 }
 

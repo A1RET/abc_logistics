@@ -64,15 +64,16 @@
 @media (min-width: $tablet-width) {
   .promo {
     @include font(18px, 64px);
+    padding-bottom: 84px;
   }
 
   .promo-list {
-    margin-top: 130px;
+    margin-top: 132px;
   }
 
   .promo-item {
-    margin: 0 auto;
-    padding-left: 90px;
+    margin-left: 189px;
+    padding-left: 102px;
     height: 64px;
 
     &:not(:first-child) {

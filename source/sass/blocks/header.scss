@@ -50,6 +50,8 @@
     position: absolute;
     z-index: 105;
     top: 25px;
+    width: 28px;
+    height: 28px;
     right: $padding-mobile;
     background-image: url("../img/decor/icon-menu-close.svg");
   }
@@ -127,19 +129,21 @@
     @include font(14px, 15px);
     width: auto;
     height: auto;
-    margin-left: 20px;
-    padding: 18px 20px 18px 47px;
+    margin-left: 14px;
+    padding: 16px 20px 16px 47px;
     border-radius: 23px;
     background-position: 20px center;
   }
 
   .nav-btn {
-    margin-left: 22px;
+    margin-left: 26px;
     width: 34px;
     height: 27px;
 
     &-opened {
       right: $padding-tablet;
+      width: 28px;
+      height: 28px;
     }
   }
 }

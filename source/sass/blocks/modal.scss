@@ -6,10 +6,14 @@
   left: 50%;
   min-width: 320px;
   transform: translateX(-50%);
+
+  .call-form {
+    margin-top: 12px;
+  }
 }
 
 .modal-content {
-  margin-top: 70px;
+  margin-top: 0;
 }
 
 .modal-overlay {
@@ -36,4 +40,18 @@
   top: 25px;
   right: $padding-mobile;
   background-image: url("../img/decor/icon-menu-close.svg");
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    min-width: 460px;
+  }
+
+  .close-modal {
+    width: 28px;
+    height: 28px;
+    top: 42px;
+    right: 26px;
+  }
 }

@@ -88,21 +88,28 @@
 
 @media (min-width: $tablet-width) {
   .contact {
-    padding: 64px 3 * $padding-tablet 81px;
+    margin-top: 77px;
+    padding: 55px 3 * $padding-tablet 78px;
   }
 
   .contact-title {
-    @include font(54px, 70px 300);
+    @include font(54px, 70px, 300);
     width: auto;
     text-align: center;
   }
 
   .contact-form {
-    margin-top: 70px;
+    margin-top: 55px;
   }
 
   .form-input {
     font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .contact-form textarea {
+    padding: 14px 15px;
   }
 
   .form-container {
@@ -135,7 +142,7 @@
   .form-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 41px;
+    margin-top: 46px;
   }
 
   .license {

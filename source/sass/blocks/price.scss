@@ -87,8 +87,12 @@
   }
 
   .price-content {
-    padding: 64px 2 * $padding-mobile 80px;
+    padding: 54px 2 * $padding-mobile 72px;
     background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%), url("../../img/decor/table-bg-t.jpg");
+  }
+
+  .table-wrapper {
+    margin-top: 75px;
   }
 
   .price-title {
@@ -96,7 +100,7 @@
   }
 
   .table-item {
-    padding: 25px 2 * $padding-mobile 25px 0;
+    padding: 24px 2 * $padding-mobile 25px 0;
     & br {
       display: none;
     }

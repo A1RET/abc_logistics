@@ -58,16 +58,28 @@
 
   .about-section-title {
     @include font(64px, 70px);
+    margin-top: 72px;
   }
 
   .about-contacts {
     display: flex;
     justify-content: space-between;
+    margin-top: 41px;
     margin-right: 4 * $padding-mobile;
+
+    & div:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  .about-title {
+    @include font(18px, 30px, 600);
+    margin: 3px 0 20px;
   }
 
   .about-btn {
-    margin-top: 38px;
+    margin-top: 46px;
+    padding: 19px 30px;
   }
 
   .map {
