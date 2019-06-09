@@ -93,12 +93,14 @@
 
   .promo-list {
     flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     margin-left: $padding;
   }
 
   .promo-item {
     width: 160px;
+    margin: 0;
     padding-top: 94px;
     padding-left: 0;
 
@@ -110,5 +112,21 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+}
+
+@media (min-width: $desktop-width-l) {
+  .promo {
+    @include font(22px, 30px);
+    padding-bottom: 110px;
+  }
+
+  .promo-list {
+    margin-left: $padding-desktop-l;
+    margin-right: $padding-desktop-l - 40px;
+  }
+
+  .promo-item {
+    width: 180px;
   }
 }
