@@ -4,6 +4,8 @@
     var formItems = form.find('.form-input-required');
     var formBtn = form.find('.form-button');
 
+    $(form).find("#phone").mask("+7 (999) 999-99-99");
+
     function checkValue() {
       if ($(this).val() == 0) {
         $(this).parent().addClass("form-item-required");
