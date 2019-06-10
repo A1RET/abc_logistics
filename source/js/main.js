@@ -1,8 +1,53 @@
-(function($){
+(function($) {
+  /*---Слайдер---*/
+  $(function () {
+    var slidesWrap = $('.slider'),
+      slides =  slidesWrap.find('.slider-item'),
+      indexEl = 1,
+      indexMax = slides.length;
+    /*---Функция переключение слайдов---*/
+    function change () {
+      slides.hide();
+      slides.filter(':nth-child('+indexEl+')').show();
+    }
+    /*---Автоматическое переключение по интервалу---*/
+    function autoChange () {
+      indexEl++;
+      if(indexEl > indexMax) {
+        indexEl = 1;
+      }
+      change ();
+    }
+    var interval = setInterval(autoChange, 3000);
+    /*---Приостановка автоматического переключение при наведении курсора---*/
+    slidesWrap.mouseover(function() {
+      clearInterval(interval);
+    });
+    slidesWrap.mouseout(function() {
+      interval = setInterval(autoChange, 3000);
+    });
+    /*---Переключение по кнопкам---*/
+    $('.slider-next').click(function() {
+      indexEl++;
+      if(indexEl > indexMax) {
+        indexEl = 1;
+      }
+      change ();
+    });
+    $('.slider-prev').click(function() {
+      indexEl--;
+      if(indexEl < 1) {
+        indexEl = indexMax;
+      }
+      change ();
+    });
+  });
+
+  /*---Функция валидации формы---*/
   function validateForm(formClass) {
     var form = $(formClass);
-    var formItems = form.find('.form-input-required');
-    var formBtn = form.find('.form-button');
+    var formItems = form.find(".form-input-required");
+    var formBtn = form.find(".form-button");
 
     $(form).find("#phone").mask("+7 (999) 999-99-99");
 
@@ -25,13 +70,13 @@
     };
 
     function checkInput(){
-      form.find('.form-input-required').each(function(){
-        if($(this).val() != ''){
+      form.find(".form-input-required").each(function(){
+        if($(this).val() != ""){
         // Если поле не пустое удаляем клаасс-указание
-          $(this).removeClass('empty_field');
+          $(this).removeClass("empty_field");
         } else {
         // Если поле пустое добавляем ласс-указание
-          $(this).addClass('empty_field');
+          $(this).addClass("empty_field");
         }
       });
     };
@@ -39,23 +84,23 @@
     // Проверка заполненности полей
     setInterval(function(){
       checkInput();
-      var sizeEmpty = form.find('.empty_field');
+      var sizeEmpty = form.find(".empty_field");
 
       if(sizeEmpty.length > 0) {
-        if(formBtn.prop('disabled', false)){
-          formBtn.prop('disabled', true);
+        if(formBtn.prop("disabled", false)){
+          formBtn.prop("disabled", true);
           return false
         } else {
-          formBtn.prop('disabled', true);
+          formBtn.prop("disabled", true);
         }
       } else {
-        formBtn.prop('disabled', false);
+        formBtn.prop("disabled", false);
       }
     },500);
 
     // Событие клика по кнопке отправить
     formBtn.click(function(){
-      if($(this).prop('disabled', true)){
+      if($(this).prop("disabled", true)){
     // подсвечиваем незаполненные поля и форму не отправляем, если есть незаполненные поля
       formItems.each(checkValue);
         return false
