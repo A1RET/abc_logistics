@@ -2,8 +2,8 @@
   @include font(14px, 52px);
   color: #ffffff;
   padding-top: 1px;
-  padding-bottom: 59px;
-  background-color: #505465;
+  padding-bottom: 60px;
+  background-color: #2f2d38;
 }
 
 .promo-list {
@@ -64,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     @include font(18px, 64px);
-    padding-bottom: 84px;
+    padding-bottom: 85px;
   }
 
   .promo-list {
@@ -90,7 +90,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     line-height: 24px;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
   }
 
   .promo-list {
@@ -121,7 +121,7 @@
 @media (min-width: $desktop-width-l) {
   .promo {
     @include font(22px, 30px);
-    padding-bottom: 108px;
+    padding-bottom: 109px;
   }
 
   .promo-list {
