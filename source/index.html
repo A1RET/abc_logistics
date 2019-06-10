@@ -242,32 +242,32 @@
           <form class="contact-form" method="post">
             <div class="form-container">
               <div class="form-left">
-                <div class="name">
+                <div class="name form-item">
                   <label class="visually-hidden" for="name">Имя:</label>
-                  <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя*" required>
+                  <input class="form-input form-input-required" type="text" name="name" id="name" placeholder="Ваше имя*" required>
                 </div>
-                <div class="phone">
+                <div class="phone form-item">
                   <label class="visually-hidden" for="phone">Телефон:</label>
-                  <input class="form-input" type="tel" name="phone" id="phone" placeholder="Телефон*" required>
+                  <input class="form-input form-input-required" type="tel" name="phone" id="phone" placeholder="Телефон*" required>
                 </div>
-                <div class="email">
+                <div class="email form-item">
                   <label class="visually-hidden" for="email">Телефон:</label>
                   <input class="form-input" type="email" name="email" id="email" placeholder="E-mail" required>
                 </div>
               </div>
-              <div class="message">
+              <div class="message form-item">
                 <label class="visually-hidden" for="message">Сообщение:</label>
-                <textarea class="form-input" name="message" id="message" placeholder="Сообщение" required></textarea>
+                <textarea class="form-input form-input-required" name="message" id="message" placeholder="Сообщение" required></textarea>
               </div>
             </div>
             <div class="form-footer">
               <div class="license">
-                <input class="license-checkbox" type="checkbox" name="agree" id="agree" checked>
+                <input class="license-checkbox visually-hidden" type="checkbox" name="agree" id="agree" checked>
                 <label class="license-text" for="agree">
                   Нажимая кнопку «Отправить» я соглашаюсь с <a class="license-link" href="">Политикой защиты и обработки персональных данных</a>
                 </label>
               </div>
-              <button class="form-button btn" type="submit">Отправить</button>
+              <button class="form-button btn" type="submit" disabled>Отправить</button>
             </div>
           </form>
         </section>

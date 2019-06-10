@@ -1,4 +1,72 @@
 (function($){
+  function validateForm(formClass) {
+    var form = $(formClass);
+    var formItems = form.find('.form-input-required');
+    var formBtn = form.find('.form-button');
+
+    function checkValue() {
+      if ($(this).val() == 0) {
+        $(this).parent().addClass("form-item-required");
+      } else {
+        $(this).parent().removeClass("form-item-required");
+      };
+    }
+
+    for (var i = 0; i < formItems.length; i++) {
+      var formItem = $(formItems[i]);
+
+      formItem.blur(checkValue);
+
+      formItem.click(function(event) {
+        $(this).parent().removeClass("form-item-required");
+      });
+    };
+
+    function checkInput(){
+      form.find('.form-input-required').each(function(){
+        if($(this).val() != ''){
+        // Если поле не пустое удаляем клаасс-указание
+          $(this).removeClass('empty_field');
+        } else {
+        // Если поле пустое добавляем ласс-указание
+          $(this).addClass('empty_field');
+        }
+      });
+    };
+
+    // Проверка заполненности полей
+    setInterval(function(){
+      checkInput();
+      var sizeEmpty = form.find('.empty_field');
+
+      if(sizeEmpty.length > 0) {
+        if(formBtn.prop('disabled', false)){
+          formBtn.prop('disabled', true);
+          return false
+        } else {
+          formBtn.prop('disabled', true);
+        }
+      } else {
+        formBtn.prop('disabled', false);
+      }
+    },500);
+
+    // Событие клика по кнопке отправить
+    formBtn.click(function(){
+      if($(this).prop('disabled', true)){
+    // подсвечиваем незаполненные поля и форму не отправляем, если есть незаполненные поля
+      formItems.each(checkValue);
+        return false
+      } else {
+    // Все хорошо, все заполнено, отправляем форму
+        form.submit();
+      }
+    });
+  };
+
+  validateForm(".contact-form");
+  validateForm(".call-form");
+
   /*----Кастомный скроллбар для таблицы---*/
   $(".table-wrapper").mCustomScrollbar({
     axis:"x", ///Включение горизонтального скроллбара
@@ -30,6 +98,7 @@
     event.preventDefault();
     $(".modal").toggle();
     $(".modal-overlay").toggle();
+    validateForm(".modal .call-form");
     event.stopPropagation();
   }
 

@@ -44,6 +44,10 @@
     color: #272b31;
     background-color: #ffffff;
   }
+
+  &:last-child::after {
+    bottom: -10px;
+  }
 }
 
 .contact-form {
@@ -86,15 +90,13 @@
 }
 
 .license-checkbox {
-  display: none;
+  &:focus + .license-text::before {
+    outline: 1px solid;
+  }
 
   &:checked + .license-text::before {
     background: #ffffff url("../img/decor/checkbox-on.png") no-repeat center;
   }
-}
-
-.license-checkbox:checked + .license-text::before {
-  background-image: url("../img/decor/checkbox-on.png");
 }
 
 .license-link {
@@ -128,6 +130,10 @@
     &::after {
       bottom: 10px;
       font-size: 14px;
+    }
+
+    &:last-child::after {
+      bottom: -20px;
     }
   }
 
