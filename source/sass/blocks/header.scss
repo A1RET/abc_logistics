@@ -102,12 +102,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
- }
+}
 
- .nav-item {
+.nav-item {
   margin-top: 5px;
   flex-basis: 33%;
- }
+}
 
 .nav-link {
   color: #ffffff;
@@ -214,16 +214,16 @@
   .nav-list {
     flex-wrap: nowrap;
     margin: 19px 160px 0;
-   }
+  }
 
-   .nav-item {
-      margin-top: 0;
-      flex-basis: auto;
-   }
+  .nav-item {
+    margin-top: 0;
+    flex-basis: auto;
+  }
 
-   .nav-link {
-      @include font(16px, 19px, 600);
-   }
+  .nav-link {
+    @include font(16px, 19px, 600);
+  }
 }
 
 @media (min-width: $desktop-width-l) {

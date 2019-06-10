@@ -4,14 +4,14 @@
   width: 280px;
   height: 300px;
   margin: 68px auto 0;
-  box-shadow: 5px 8.66px 25px rgba(30,27,25,0.3);
+  box-shadow: 5px 8.66px 25px rgba(30, 27, 25, 0.3);
 }
 
 .slider-list {
   @include list;
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
 }
 
 .slider-item {
@@ -162,5 +162,3 @@
     bottom: 53px;
   }
 }
-
-

@@ -34,7 +34,6 @@
   width: 28px;
   height: 20px;
   background: transparent  no-repeat center;
-  background-size: cover;
   border: none;
   cursor: pointer;
   top: 25px;
@@ -62,7 +61,7 @@
 
 @media (min-width: $desktop-width) {
   .modal {
-   & .call-form .form-button {
+    & .call-form .form-button {
       margin-top: 10px;
     }
   }
