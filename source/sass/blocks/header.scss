@@ -28,12 +28,21 @@
 
 .call-btn {
   display: inline-block;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   font-size: 0;
+  color: #555555;
   background: #ffffff url("../img/decor/Phone_contact.png") no-repeat center;
   background-size: 15px 15px;
+  border: 2px solid #ffffff;
   border-radius: 50%;
+
+  &:hover,
+  &focus {
+    color: #ffffff;
+    background-color: transparent;
+    background-image: url("../img/decor/Phone_contact-hover.png");
+  }
 }
 
 .nav-btn {
@@ -81,6 +90,11 @@
 
 .nav-link {
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid #ffffff;
+  }
 }
 
 .nav-site-modal {
@@ -130,7 +144,7 @@
     width: auto;
     height: auto;
     margin-left: 14px;
-    padding: 16px 20px 16px 47px;
+    padding: 14px 18px 14px 45px;
     border-radius: 23px;
     background-position: 20px center;
   }
@@ -213,7 +227,7 @@
   .call-btn {
     font-size: 16px;
     margin-left: 24px;
-    padding: 21px 30px 21px 62px;
+    padding: 19px 28px 19px 60px;
     border-radius: 28px;
     background-position: 30px center;
     background-size: 23px 22px;

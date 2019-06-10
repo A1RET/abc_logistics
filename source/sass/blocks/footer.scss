@@ -28,7 +28,12 @@
 }
 
 .footer-link {
-  color: #a1a4a7;
+  color: #ffffff;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {

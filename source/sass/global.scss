@@ -21,6 +21,16 @@ a {
   background-color: #f9a03e;
   border: none;
   border-radius: 23px;
+
+  &:hover,
+  &:focus {
+    background-color: #f88a11;
+  }
+
+  &:disabled {
+    color: rgba(#ffffff, 0.3);
+    background-color: #424853;
+  }
 }
 
 @media (min-width: $tablet-width) {
