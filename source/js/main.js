@@ -10,7 +10,7 @@
       slides.hide();
       slides.filter(':nth-child('+indexEl+')').show();
     }
-    /*---Автоматическое переключение по интервалу---*/
+    /*---Автоматическое переключение по интервалу---*//*
     function autoChange () {
       indexEl++;
       if(indexEl > indexMax) {
@@ -18,7 +18,7 @@
       }
       change ();
     }
-    var interval = setInterval(autoChange, 3000);
+    var interval = setInterval(autoChange, 3000);*/
     /*---Приостановка автоматического переключение при наведении курсора---*/
     slidesWrap.mouseover(function() {
       clearInterval(interval);
@@ -114,11 +114,18 @@
   validateForm(".contact-form");
   validateForm(".call-form");
 
-  /*----Кастомный скроллбар для таблицы---*/
-  $(".table-wrapper").mCustomScrollbar({
-    axis:"x", ///Включение горизонтального скроллбара
-    scrollInertia: 0, ///Отключение анимации
-    theme: "my-theme" ///Стили
+    /*----Кастомный скроллбар для таблицы---*/
+  $(window).resize(function () {
+    if($(window).width() < 480) {
+      $(".table-wrapper").mCustomScrollbar({
+        advanced:{ autoExpandHorizontalScroll: true },
+        axis:"x", ///Включение горизонтального скроллбара
+        scrollInertia: 0, ///Отключение анимации
+        theme: "my-theme" ///Стили
+      });
+    } else {
+      $(".table-wrapper").mCustomScrollbar("destroy");
+    };
   });
 
   /*---Функция переключения элементов мобильного меню---*/
