@@ -10,7 +10,8 @@
   @include list;
   display: flex;
   flex-direction: column;
-  margin-top: 79px;
+  align-items: center;
+  margin: 79px auto 0;
 }
 
 .promo-item {
@@ -72,7 +73,6 @@
   }
 
   .promo-item {
-    margin-left: 189px;
     padding-left: 102px;
     height: 64px;
 

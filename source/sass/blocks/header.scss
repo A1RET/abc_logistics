@@ -1,7 +1,8 @@
 .header {
   height: 400px;
-  background-image: url("../img/decor/header-bg-m.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
+  background-image: url("../img/decor/header-bg-m.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 100%);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header-top {
@@ -11,10 +12,30 @@
   padding-top: 16px;
 }
 
-.header-logo-modal {
+.logo-image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 128px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.header-logo {
   position: absolute;
+  top: -44px;
+  left: -4px;
+  width: 100%;
+  height: auto;
+
+  &:active {
+    top: -5px;
+  }
+}
+
+.logo-image-wrapper-modal {
+  position: fixed;
   z-index: 105;
-  top: 21px;
+  top: 16px;
   left: $padding-mobile;
 }
 
@@ -56,7 +77,7 @@
   cursor: pointer;
 
   &-opened {
-    position: absolute;
+    position: fixed;
     z-index: 105;
     top: 25px;
     width: 28px;
@@ -98,7 +119,7 @@
 }
 
 .nav-site-modal {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0;
   right: 0;
@@ -117,19 +138,29 @@
 @media (min-width: $tablet-width) {
   .header {
     height: 550px;
-    background-image: url("../img/decor/header-bg-t.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
+    background-image: url("../img/decor/header-bg-t.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 100%);
   }
 
   .header-top {
     padding-top: 30px;
   }
 
-  .header-logo {
+  .logo-image-wrapper {
     width: 194px;
     height: 48px;
   }
 
-  .header-logo-modal {
+  .header-logo {
+    top: -60px;
+    left: -5px;
+
+    &:active {
+      top: -5px;
+    }
+  }
+
+  .logo-image-wrapper-modal {
+    top: 30px;
     left: $padding-tablet;
   }
 
@@ -156,6 +187,7 @@
 
     &-opened {
       right: $padding-tablet;
+      top: 35px;
       width: 28px;
       height: 28px;
     }
@@ -164,7 +196,7 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    background-image: url("../img/decor/header-bg-d.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
+    background-image: url("../img/decor/header-bg-d.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 100%);
   }
 
   .nav-checkbox {
@@ -197,8 +229,8 @@
 @media (min-width: $desktop-width-l) {
   .header {
     height: 680px;
-    background-image: url("../img/decor/header-bg-d1920.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 80%);
-    background-position: 0 -55px;
+    background-image: url("../img/decor/header-bg-d1920.jpg"), linear-gradient(135deg, #f2563c 0%, #f88a11 100%);
+    background-position: center -55px, 0 0;
   }
 
   .header-top {
@@ -207,13 +239,19 @@
     padding-top: 50px;
   }
 
-  .header-top > picture {
+  .logo-image-wrapper {
     order: 1;
+    width: 242px;
+    height: 60px;
   }
 
   .header-logo {
-    width: 242px;
-    height: 60px;
+    top: -5px;
+    left: -5px;
+
+    &:active {
+      top: -70px;
+    }
   }
 
   .callback {

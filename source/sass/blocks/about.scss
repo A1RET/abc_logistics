@@ -65,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 41px;
-    margin-right: 4 * $padding-mobile;
+    margin-right: 80px;
 
     & div:nth-child(2) {
       margin-top: 0;
@@ -83,7 +83,6 @@
   }
 
   .map {
-    width: 760px;
     height: 510px;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 .price-content {
-  padding: 27px $padding-mobile 41px;
+  padding: 27px 20px 41px;
   background-color: #f99629;
   background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%), url("../../img/decor/table-bg-m.jpg");
   background-repeat: no-repeat;
@@ -19,8 +19,10 @@
 
 .table-wrapper {
   position: relative;
+  width: 100%;
   margin-top: 50px;
   overflow: auto;
+  overflow-y: hidden;
 
   &::-webkit-scrollbar{
     height: 8px;
@@ -88,7 +90,7 @@
   }
 
   .price-content {
-    padding: 54px 2 * $padding-mobile 72px;
+    padding: 54px 40px 72px;
     background-image: linear-gradient(0deg, rgba(255,255,255,0.10196078431372549) 0%, rgba(255,255,255,0.2) 100%), url("../../img/decor/table-bg-t.jpg");
   }
 
@@ -101,7 +103,7 @@
   }
 
   .table-item {
-    padding: 24px 2 * $padding-mobile 25px 0;
+    padding: 24px 40px 25px 0;
     & br {
       display: none;
     }
@@ -118,8 +120,13 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-left: 3 * $padding + $padding-desktop;
-    padding-right: 3 * $padding + $padding-desktop;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+
+  .price-content {
+    margin-left: 3 * $padding;
+    margin-right: 3 * $padding;
   }
 
   .table-item {

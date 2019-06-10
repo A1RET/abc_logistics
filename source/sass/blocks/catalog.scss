@@ -4,6 +4,7 @@
 
 .catalog-list {
   @include list;
+  text-align: center;
 }
 
 .catalog-item {

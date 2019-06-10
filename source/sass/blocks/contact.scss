@@ -153,11 +153,11 @@
 
   .form-left,
   .message {
-    width: 300px;
+    flex-grow: 1;
   }
 
   .form-left {
-    margin-right: 2 * $padding-tablet;
+    margin-right: 40px;
   }
 
   .email {
@@ -197,7 +197,18 @@
 @media (min-width: $desktop-width) {
   .contact {
     margin-top: 80px;
-    padding: 55px 3 * $padding + $padding-desktop 73px;
+    padding: 55px 0 73px;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+
+  .contact-title {
+    margin-left: 3 * $padding;
+  }
+
+  .contact-form {
+    margin-right: 3 * $padding;
+    margin-left: 3 * $padding;
   }
 
   .form-left {
@@ -225,7 +236,7 @@
   }
 
   .contact-form {
-    margin-top: 61px;
+    margin: 61px 0 0;
   }
 
   .contact-form textarea {

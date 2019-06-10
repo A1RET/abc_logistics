@@ -10,7 +10,7 @@
       slides.hide();
       slides.filter(':nth-child('+indexEl+')').show();
     }
-    /*---Автоматическое переключение по интервалу---*//*
+    /*---Автоматическое переключение по интервалу---*/
     function autoChange () {
       indexEl++;
       if(indexEl > indexMax) {
@@ -18,7 +18,7 @@
       }
       change ();
     }
-    var interval = setInterval(autoChange, 3000);*/
+    var interval = setInterval(autoChange, 3000);
     /*---Приостановка автоматического переключение при наведении курсора---*/
     slidesWrap.mouseover(function() {
       clearInterval(interval);
@@ -131,7 +131,7 @@
   /*---Функция переключения элементов мобильного меню---*/
   var toggleMenu = function(evt) {
     event.preventDefault();
-    $(".header-logo").toggleClass("header-logo-modal");
+    $(".logo-image-wrapper").toggleClass("logo-image-wrapper-modal");
     $(".nav-site").toggleClass("nav-site-modal");
     $(".nav-btn").toggleClass("nav-btn-opened");
   };
@@ -141,7 +141,7 @@
   /*---Выключение мобильного меню на десктопе---*/
   $(window).resize(function () {
     if($(window).width() >= 1020) {
-    $(".header-logo").removeClass("header-logo-modal");
+    $(".logo-image-wrapper").removeClass("logo-image-wrapper-modal");
     $(".nav-site").removeClass("nav-site-modal");
     $(".nav-btn").removeClass("nav-btn-opened");
     };
@@ -159,6 +159,7 @@
   /*---Переключение модального окна---*/
   /*---При клике на кнопку Заказать звонок---*/
   $(".call-btn").click(toggleModal);
+  $(".about-btn").click(toggleModal);
   /*---При клике на кнопку Закрыть окно---*/
   $(".close-modal").click(toggleModal);
   /*---При клике на оверлей---*/

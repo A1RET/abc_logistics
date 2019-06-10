@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 120;
   top: 70px;
   left: 50%;
@@ -29,7 +29,7 @@
 
 .close-modal {
   display: inline-block;
-  position: absolute;
+  position: fixed;
   margin-left: 18px;
   width: 28px;
   height: 20px;
@@ -52,7 +52,7 @@
     width: 28px;
     height: 28px;
     top: 42px;
-    right: 26px;
+    right: $padding-tablet;
   }
 
   .modal .form-button {
@@ -65,5 +65,9 @@
    & .call-form .form-button {
       margin-top: 10px;
     }
+  }
+
+  .close-modal {
+    right: $padding-desktop;
   }
 }
