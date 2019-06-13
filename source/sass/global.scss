@@ -33,6 +33,10 @@ a {
   }
 }
 
+input:invalid {
+  box-shadow: none;
+}
+
 @media (min-width: $tablet-width) {
   body {
     @include font(18px, 20px);
