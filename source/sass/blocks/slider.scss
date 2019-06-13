@@ -56,6 +56,11 @@
   &:first-child {
     margin-right: 22px;
   }
+
+  &:hover .slider-btn-image,
+  &:focus .slider-btn-image {
+    fill: #f88a11;
+  }
 }
 
 .slider-btn-image {
